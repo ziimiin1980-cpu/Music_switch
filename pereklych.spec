@@ -72,6 +72,9 @@ a = Analysis(
         "PySide6.QtOpenGLWidgets",
         "PySide6.QtSvg",
         "PySide6.QtSvgWidgets",
+        # Pillow AVIF codec: never used for SMTC artwork (PNG/JPEG), 8 MB
+        "PIL.AvifImagePlugin",
+        "PIL._avif",
         # stdlib / test leftovers
         "tkinter",
         "unittest",
@@ -104,7 +107,8 @@ _KEPT_PLUGINS = {
 
 def _keep(entry) -> bool:
     dest = entry[0].replace("\\", "/").lower()
-    if dest.rsplit("/", 1)[-1] in _UNUSED_DLLS:
+    name = dest.rsplit("/", 1)[-1]
+    if name in _UNUSED_DLLS or name.startswith("_avif."):
         return False
     if "/plugins/" in dest:
         return dest in _KEPT_PLUGINS

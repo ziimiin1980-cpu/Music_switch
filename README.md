@@ -16,11 +16,8 @@
 — портативный архив `Pereklych-0.1.0-win64.zip` (~32 МБ). Установщик не нужен:
 распакуйте в любую папку и запустите `Pereklych.exe`.
 
-SHA-256 архива `Pereklych-0.1.0-win64.zip`:
-
-```
-A3AB0199806E7A7186DC883A2C419BFB428A039C22FEA3D53BC96D89568A6F25
-```
+Контрольная сумма архива — в прикреплённом к релизу файле
+[`SHA256SUMS.txt`](https://github.com/ziimiin1980-cpu/Music_switch/releases/latest/download/SHA256SUMS.txt).
 
 > Сборка не подписана: SmartScreen может показать предупреждение —
 > «Подробнее» → «Выполнить всё равно».
