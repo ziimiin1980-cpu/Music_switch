@@ -1,0 +1,23 @@
+# Python / virtualenv
+.venv/
+__pycache__/
+*.py[cod]
+
+# PyInstaller / build output
+build/Pereklych/
+build/pereklych/
+dist/
+*.spec.bak
+
+# Local release artifacts
+release/
+
+# IDE / OS
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini
+
+# Logs and temp files
+*.log
+.tmp_*

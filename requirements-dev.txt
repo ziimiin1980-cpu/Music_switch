@@ -1,0 +1,4 @@
+# Build-time only (not required to run from source).
+pyinstaller>=6.11
+# PyInstaller dependency on Windows (embeds version info / icon).
+pefile>=2023.2.7
